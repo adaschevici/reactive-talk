@@ -28,6 +28,7 @@ require("spectacle/lib/themes/default/index.css");
 
 
 const images = {
+  anchorman: require("../assets/anchorman.jpg"),
   city: require("../assets/city.jpg"),
   kat: require("../assets/kat.png"),
   logo: require("../assets/formidable-logo.svg"),
@@ -70,6 +71,16 @@ export default class Presentation extends React.Component {
           <Appear>
             <Image src={images.starlordConfused.replace("/", "")} height="300px" width="300px" display="block" />
           </Appear>
+        </Slide>
+
+        <Slide transition={["slide"]} bgColor="secondary">
+          <Heading size={4} textColor="primary" caps>Definition...</Heading>
+          <Cite><Text size={6} textColor="primary">Projects each element of an observable sequence into a new sequence of observable sequences by incorporating the element's index and then transforms an observable sequence of observable sequences into an observable sequence producing values only from the most recent observable sequence.</Text></Cite>
+        </Slide>
+
+        <Slide transition={["slide"]} bgColor="tertiary">
+          <Heading size={4} textColor="primary" caps>Feels like</Heading>
+          <Image src={images.anchorman.replace("/", "")} height="500px" width="800px" />
         </Slide>
 
         <Slide transition={["slide"]} bgColor="tertiary">
@@ -121,7 +132,7 @@ export default class Presentation extends React.Component {
           <Quote>
             <Image src={images.reactiveDog.replace("/", "")} width="500" height="500" />
           </Quote>
-          <Cite>Every Reactive Reactive Programmer Ever</Cite>
+          <Cite>Every Reactive Programmer Ever</Cite>
           </BlockQuote>
         </Slide>
       </Deck>
