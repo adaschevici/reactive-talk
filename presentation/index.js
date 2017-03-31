@@ -32,6 +32,7 @@ const images = {
   kat: require("../assets/kat.png"),
   logo: require("../assets/formidable-logo.svg"),
   markdown: require("../assets/markdown.png"),
+  reactiveDog: require("../assets/reactive_dog.jpg"),
   starlordConfused: require("../assets/starlord_confused.jpg")
 };
 
@@ -74,11 +75,11 @@ export default class Presentation extends React.Component {
         <Slide transition={["slide"]} bgColor="tertiary">
           <Heading size={4} textColor="primary" caps>What?</Heading>
           <List>
-            <Appear><ListItem>Item 1</ListItem></Appear>
-            <Appear><ListItem>Item 1</ListItem></Appear>
-            <Appear><ListItem>Item 1</ListItem></Appear>
-            <Appear><ListItem>Item 1</ListItem></Appear>
-            <Appear><ListItem>Item 1</ListItem></Appear>
+            <Appear><ListItem textColor="primary">Item 1</ListItem></Appear>
+            <Appear><ListItem textColor="primary">Item 1</ListItem></Appear>
+            <Appear><ListItem textColor="primary">Item 1</ListItem></Appear>
+            <Appear><ListItem textColor="primary">Item 1</ListItem></Appear>
+            <Appear><ListItem textColor="primary">Item 1</ListItem></Appear>
           </List>
         </Slide>
 
@@ -117,8 +118,10 @@ export default class Presentation extends React.Component {
 
         <Slide transition={["fade"]} bgColor="secondary" textColor="primary">
           <BlockQuote>
-            <Quote>Example Quote</Quote>
-            <Cite>Author</Cite>
+          <Quote>
+            <Image src={images.reactiveDog.replace("/", "")} width="500" height="500" />
+          </Quote>
+          <Cite>Every Reactive Reactive Programmer Ever</Cite>
           </BlockQuote>
         </Slide>
       </Deck>
