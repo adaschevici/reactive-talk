@@ -80,7 +80,12 @@ export default class Presentation extends React.Component {
         <Slide transition={["slide"]} bgColor="tertiary">
           <Heading size={4} textColor="primary" caps>Huh?</Heading>
           <List>
-            <Appear><ListItem textColor="primary">Item 1</ListItem></Appear>
+            <Appear><ListItem textColor="primary">Reactive programming is programming with asynchronous data streams.</ListItem></Appear>
+            <Appear>
+                <ListItem textColor="primary">
+                  Streams are event pipelines or your typical events, which you can observe and trigger side effects.
+                </ListItem>
+            </Appear>
             <Appear><ListItem textColor="primary">Item 1</ListItem></Appear>
             <Appear><ListItem textColor="primary">Item 1</ListItem></Appear>
             <Appear><ListItem textColor="primary">Item 1</ListItem></Appear>
