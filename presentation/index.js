@@ -50,12 +50,6 @@ const theme = createTheme({
 });
 
 export default class Presentation extends React.Component {
-  // <Appear><Heading size={1} textColor="secondary">Heading 1</Heading></Appear>
-  // <Heading size={2} textColor="secondary">Heading 2</Heading>
-  // <Heading size={3} textColor="secondary">Heading 3</Heading>
-  // <Heading size={4} textColor="secondary">Heading 4</Heading>
-  // <Heading size={5} textColor="secondary">Heading 5</Heading>
-  // <Text size={6} textColor="secondary">Standard text</Text>
   render() {
     return (
       <Deck transition={["zoom", "slide"]} transitionDuration={500} theme={theme}>
@@ -74,7 +68,7 @@ export default class Presentation extends React.Component {
         </Slide>
 
         <Slide transition={["slide"]} bgColor="secondary">
-          <Heading size={4} textColor="primary" caps>Definition...</Heading>
+          <Heading size={6} textColor="primary" caps>What it does by definition...</Heading>
           <Cite><Text size={6} textColor="primary">Projects each element of an observable sequence into a new sequence of observable sequences by incorporating the element's index and then transforms an observable sequence of observable sequences into an observable sequence producing values only from the most recent observable sequence.</Text></Cite>
         </Slide>
 
@@ -84,7 +78,7 @@ export default class Presentation extends React.Component {
         </Slide>
 
         <Slide transition={["slide"]} bgColor="tertiary">
-          <Heading size={4} textColor="primary" caps>What?</Heading>
+          <Heading size={4} textColor="primary" caps>Huh?</Heading>
           <List>
             <Appear><ListItem textColor="primary">Item 1</ListItem></Appear>
             <Appear><ListItem textColor="primary">Item 1</ListItem></Appear>
