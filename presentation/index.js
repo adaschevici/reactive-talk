@@ -79,7 +79,7 @@ export default class Presentation extends React.Component {
         </Slide>
 
         <Slide transition={["slide"]} bgColor="tertiary">
-          <Heading size={4} textColor="primary" caps>Feels like</Heading>
+          <Heading size={4} textColor="primary">Feels like</Heading>
           <Image src={images.anchorman.replace("/", "")} height="500px" width="800px" />
         </Slide>
 
