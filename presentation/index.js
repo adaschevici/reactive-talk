@@ -98,7 +98,7 @@ export default class Presentation extends React.Component {
             </Appear>
             <Appear>
               <ListItem textColor="primary" textSize="1.2em">
-                Observables can be subscribed to by observers which implement the functionality for the observed stream data.
+                Observables can be subscribed to by observers which "react" to the observed stream data.
               </ListItem>
             </Appear>
           </List>
@@ -109,7 +109,7 @@ export default class Presentation extends React.Component {
           <List>
             <Appear>
               <ListItem textColor="primary" textSize="1em">
-                The benefit is obvious in modern webapps and mobile apps that are highly interactive with a multitude of UI events related to data events
+                The benefits are obvious in modern webapps and mobile apps that are highly interactive with a multitude of UI events related to data events
               </ListItem>
             </Appear>
             <Appear>
@@ -127,7 +127,6 @@ export default class Presentation extends React.Component {
                 The complexity of the event flow raises a requirement for a layer of abstraction on top of event pipelines and Reactive Programming is an approach to this abstraction.
               </ListItem>
             </Appear>
-            <Appear><ListItem textColor="primary">Item 1</ListItem></Appear>
           </List>
         </Slide>
 
