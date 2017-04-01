@@ -14,7 +14,7 @@ import {
   Text,
   Image,
   Appear,
-  Markdown
+  CodePane
 } from "spectacle";
 
 // Import image preloader util
@@ -165,7 +165,7 @@ export default class Presentation extends React.Component {
           <List>
             <Appear>
               <ListItem textColor="primary">
-                You have an UI with rich events
+                You have an UI with complex events on components
               </ListItem>
             </Appear>
             <Appear>
@@ -207,12 +207,24 @@ export default class Presentation extends React.Component {
           </List>
         </Slide>
 
-        <Slide transition={["fade"]} bgColor="tertiary" textColor="primary">
+        <Slide transition={["slide"]} bgColor="tertiary">
+          <Heading size={4} textColor="primary" caps>Some Code Using Rx</Heading>
+          <Heading size={6} textColor="primary" caps>...and Hello World</Heading>
+          <CodePane
+            lang="javascript"
+            source={require("raw-loader!../assets/deck.example")}
+            textSize="0.8em"
+            margin="20px auto"
+          />
+        </Slide>
+
+
+        <Slide transition={["fade"]} bgColor="secondary" textColor="primary">
           <BlockQuote>
           <Quote>
             <Image src={images.reactiveDog.replace("/", "")} width="500" height="500" />
           </Quote>
-          <Cite textColor="primary">Every Reactive Programmer Ever</Cite>
+          <Cite>Every Reactive Programmer Ever</Cite>
           </BlockQuote>
         </Slide>
       </Deck>
