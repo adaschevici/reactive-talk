@@ -89,7 +89,7 @@ export default class Presentation extends React.Component {
             </Appear>
             <Appear>
               <ListItem textColor="primary" textSize="1.2em">
-                Streams are event pipelines or your typical events, which you can observe and trigger side effects.
+                Streams are event pipelines or your typical events, which you can observe and perform actions on.
               </ListItem>
             </Appear>
             <Appear>
@@ -154,7 +154,7 @@ export default class Presentation extends React.Component {
             </Appear>
             <Appear>
               <ListItem textColor="primary" textSize="1em">
-                These libraries provide great tools for composing and aggregating these events queues.
+                These libraries provide great tools for composing and aggregating data streams.
               </ListItem>
             </Appear>
           </List>
