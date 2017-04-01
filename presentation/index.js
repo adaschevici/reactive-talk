@@ -116,22 +116,22 @@ export default class Presentation extends React.Component {
           <Heading size={4} textColor="primary" caps>Why?</Heading>
           <List>
             <Appear>
-              <ListItem textColor="primary" textSize="1em">
+              <ListItem textColor="primary" textSize="1.2em">
                 Managing user events flow is hard
               </ListItem>
             </Appear>
             <Appear>
-              <ListItem textColor="primary" textSize="1em">
+              <ListItem textColor="primary" textSize="1.2em">
                 Managing broadcast events is harder
               </ListItem>
             </Appear>
             <Appear>
-              <ListItem textColor="primary" textSize="1em">
+              <ListItem textColor="primary" textSize="1.2em">
                 Managing both is a NIGHTMARE
               </ListItem>
             </Appear>
             <Appear>
-              <ListItem textColor="primary" textSize="1em">
+              <ListItem textColor="primary" textSize="1.2em">
                 The bad news is you have to handle both
               </ListItem>
             </Appear>
