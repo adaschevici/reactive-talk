@@ -170,7 +170,7 @@ export default class Presentation extends React.Component {
             </Appear>
             <Appear>
               <ListItem textColor="primary">
-                You have a server side app that need to have side effects based on async service calls.
+                You have a server side app that needs to have side effects based on async service calls.
               </ListItem>
             </Appear>
             <Appear>
