@@ -133,22 +133,47 @@ export default class Presentation extends React.Component {
         <Slide transition={["slide"]} bgColor="tertiary">
           <Heading size={4} textColor="primary" caps>How?</Heading>
           <List>
-            <Appear><ListItem textColor="primary">Item 1</ListItem></Appear>
-            <Appear><ListItem textColor="primary">Item 1</ListItem></Appear>
-            <Appear><ListItem textColor="primary">Item 1</ListItem></Appear>
-            <Appear><ListItem textColor="primary">Item 1</ListItem></Appear>
-            <Appear><ListItem textColor="primary">Item 1</ListItem></Appear>
+            <Appear>
+              <ListItem textColor="primary" textSize="1em">
+                The fundament of the implementation in reactive programming is the Observer Pattern.
+              </ListItem>
+            </Appear>
+            <Appear>
+              <ListItem textColor="primary" textSize="1em">
+                The most popular library is Rx. It has multiple language implementations (JS, Python, Java, Scala, C# etc.)
+              </ListItem>
+            </Appear>
+            <Appear>
+              <ListItem textColor="primary" textSize="1em">
+                RP can be useful both in UI and on the server side as a logical progression in event driven systems
+              </ListItem>
+            </Appear>
+            <Appear>
+              <ListItem textColor="primary" textSize="1em">
+                These libraries provide great tools for composing and aggregating these events queues.
+              </ListItem>
+            </Appear>
           </List>
         </Slide>
 
         <Slide transition={["slide"]} bgColor="secondary">
           <Heading size={4} textColor="primary" caps>When?</Heading>
           <List>
-            <Appear><ListItem textColor="primary">Item 1</ListItem></Appear>
-            <Appear><ListItem textColor="primary">Item 1</ListItem></Appear>
-            <Appear><ListItem textColor="primary">Item 1</ListItem></Appear>
-            <Appear><ListItem textColor="primary">Item 1</ListItem></Appear>
-            <Appear><ListItem textColor="primary">Item 1</ListItem></Appear>
+            <Appear>
+              <ListItem textColor="primary">
+                In UI applications that need rich event handling on components.
+              </ListItem>
+            </Appear>
+            <Appear>
+              <ListItem textColor="primary">
+                In server side apps that need to have side effects based on asynch service calls.
+              </ListItem>
+            </Appear>
+            <Appear>
+              <ListItem textColor="primary" textSize="1em">
+                As a rule of thumb whenever the system has asynchronous service calls and side effects based on these service calls then there can be gains using the reactive approach
+              </ListItem>
+            </Appear>
           </List>
         </Slide>
 
