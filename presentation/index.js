@@ -14,7 +14,8 @@ import {
   Text,
   Image,
   Appear,
-  CodePane
+  CodePane,
+  Fill
 } from "spectacle";
 
 // Import image preloader util
@@ -67,11 +68,12 @@ export default class Presentation extends React.Component {
 
         <Slide transition={["slide"]} bgColor="secondary">
           <Heading size={6} textColor="primary" caps>What it does by definition...</Heading>
-          <Cite>
+          \n
+          <Appear>
             <Text size={6} textColor="primary">
-              Projects each element of an observable sequence into a new sequence of observable sequences by incorporating the element's index and then transforms an observable sequence of observable sequences into an observable sequence producing values only from the most recent observable sequence.
+                Projects each element of an observable sequence into a new sequence of observable sequences by incorporating the element's index and then transforms an observable sequence of observable sequences into an observable sequence producing values only from the most recent observable sequence.
             </Text>
-          </Cite>
+          </Appear>
         </Slide>
 
         <Slide transition={["slide"]} bgColor="tertiary">
