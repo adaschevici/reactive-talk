@@ -15,7 +15,7 @@ import {
   Image,
   Appear,
   CodePane,
-  Fill
+  Link
 } from "spectacle";
 
 // Import image preloader util
@@ -31,6 +31,9 @@ require("spectacle/lib/themes/default/index.css");
 
 const images = {
   anchorman: require("../assets/anchorman.jpg"),
+  twitter: require("../assets/twitter.png"),
+  octocat: require("../assets/Octocat.png"),
+  sunset: require("../assets/sunset_image.jpg"),
   reactiveDog: require("../assets/reactive_dog.jpg"),
   starlordConfused: require("../assets/starlord_confused.jpg"),
   nightmare: require("../assets/nightmare.jpg")
@@ -226,12 +229,26 @@ export default class Presentation extends React.Component {
         </Slide>
 
 
-        <Slide transition={["fade"]} bgColor="secondary" textColor="primary">
+        <Slide transition={["fade"]} bgImage={images.sunset.replace("/", "")} bgDarken="0.75" textColor="primary">
           <BlockQuote>
           <Quote>
             <Image src={images.reactiveDog.replace("/", "")} width="500" height="500" />
           </Quote>
           <Cite>Every Reactive Programmer Ever</Cite>
+          </BlockQuote>
+        </Slide>
+
+        <Slide transition={["fade"]} bgColor="secondary" textColor="primary">
+          <BlockQuote>
+            <Quote>
+              <Image src={images.twitter.replace("/", "")} width="120" height="100" />
+              <Link textColor="tertiary"> @hackawaye</Link>
+            </Quote>
+            <Quote>
+              <Image src={images.octocat.replace("/", "")} width="100" height="100" />
+              <Link textColor="tertiary" href="http://github.com/adaschevici/reactive-talk" textSize="0.35em">http://github.com/adaschevici/reactive-talk</Link>
+            </Quote>
+
           </BlockQuote>
         </Slide>
       </Deck>
