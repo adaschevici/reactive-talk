@@ -27,11 +27,6 @@ import createTheme from "spectacle/lib/themes/default";
 require("normalize.css");
 require("spectacle/lib/themes/default/index.css");
 
-const subListItem = {
-  fontSize: "80%",
-  textSize: "15px",
-  marginLeft: "1em"
-};
 
 const images = {
   anchorman: require("../assets/anchorman.jpg"),
@@ -88,22 +83,22 @@ export default class Presentation extends React.Component {
           <List>
             <Appear>
               <ListItem textColor="primary" textSize="1.2em">
-                  Reactive programming is programming with asynchronous data streams.
-              </ListItem>
-            </Appear>
-            <Appear>
-              <ListItem textColor="primary" textSize="1.2em">
-                  Streams are event pipelines or your typical events, which you can observe and trigger side effects.
-              </ListItem>
-            </Appear>
-            <Appear>
-              <ListItem textColor="primary" textSize="1.2em">
-                  Streams are event pipelines or your typical events, which you can observe and trigger side effects.
+                Reactive programming is programming with asynchronous data streams.
               </ListItem>
             </Appear>
             <Appear>
               <ListItem textColor="primary" textSize="1.2em">
                 Streams are event pipelines or your typical events, which you can observe and trigger side effects.
+              </ListItem>
+            </Appear>
+            <Appear>
+              <ListItem textColor="primary" textSize="1.2em">
+                Streams are observables.
+              </ListItem>
+            </Appear>
+            <Appear>
+              <ListItem textColor="primary" textSize="1.2em">
+                Observables can be subscribed to by observers which implement the functionality for the observed stream data.
               </ListItem>
             </Appear>
           </List>
@@ -112,10 +107,26 @@ export default class Presentation extends React.Component {
         <Slide transition={["slide"]} bgColor="secondary">
           <Heading size={4} textColor="primary" caps>Why?</Heading>
           <List>
-            <Appear><ListItem textColor="primary">Item 1</ListItem></Appear>
-            <Appear><ListItem textColor="primary">Item 1</ListItem></Appear>
-            <Appear><ListItem textColor="primary">Item 1</ListItem></Appear>
-            <Appear><ListItem textColor="primary">Item 1</ListItem></Appear>
+            <Appear>
+              <ListItem textColor="primary" textSize="1em">
+                The benefit is obvious in modern webapps and mobile apps that are highly interactive with a multitude of UI events related to data events
+              </ListItem>
+            </Appear>
+            <Appear>
+              <ListItem textColor="primary" textSize="1em">
+                Apps are more real time, triggering saves and modifications to the backend in response to these events
+              </ListItem>
+            </Appear>
+            <Appear>
+              <ListItem textColor="primary" textSize="1em">
+                Data changes need to be broadcasted seamlessly and at scale to all users
+              </ListItem>
+            </Appear>
+            <Appear>
+              <ListItem textColor="primary" textSize="1em">
+                The complexity of the event flow raises a requirement for a layer of abstraction on top of event pipelines and Reactive Programming is an approach to this abstraction.
+              </ListItem>
+            </Appear>
             <Appear><ListItem textColor="primary">Item 1</ListItem></Appear>
           </List>
         </Slide>
