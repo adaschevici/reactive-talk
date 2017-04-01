@@ -13,7 +13,8 @@ import {
   Slide,
   Text,
   Image,
-  Appear
+  Appear,
+  Markdown
 } from "spectacle";
 
 // Import image preloader util
@@ -26,13 +27,14 @@ import createTheme from "spectacle/lib/themes/default";
 require("normalize.css");
 require("spectacle/lib/themes/default/index.css");
 
+const subListItem = {
+  fontSize: "80%",
+  textSize: "15px",
+  marginLeft: "1em"
+};
 
 const images = {
   anchorman: require("../assets/anchorman.jpg"),
-  city: require("../assets/city.jpg"),
-  kat: require("../assets/kat.png"),
-  logo: require("../assets/formidable-logo.svg"),
-  markdown: require("../assets/markdown.png"),
   reactiveDog: require("../assets/reactive_dog.jpg"),
   starlordConfused: require("../assets/starlord_confused.jpg")
 };
@@ -69,7 +71,11 @@ export default class Presentation extends React.Component {
 
         <Slide transition={["slide"]} bgColor="secondary">
           <Heading size={6} textColor="primary" caps>What it does by definition...</Heading>
-          <Cite><Text size={6} textColor="primary">Projects each element of an observable sequence into a new sequence of observable sequences by incorporating the element's index and then transforms an observable sequence of observable sequences into an observable sequence producing values only from the most recent observable sequence.</Text></Cite>
+          <Cite>
+            <Text size={6} textColor="primary">
+              Projects each element of an observable sequence into a new sequence of observable sequences by incorporating the element's index and then transforms an observable sequence of observable sequences into an observable sequence producing values only from the most recent observable sequence.
+            </Text>
+          </Cite>
         </Slide>
 
         <Slide transition={["slide"]} bgColor="tertiary">
@@ -80,16 +86,26 @@ export default class Presentation extends React.Component {
         <Slide transition={["slide"]} bgColor="tertiary">
           <Heading size={4} textColor="primary" caps>Huh?</Heading>
           <List>
-            <Appear><ListItem textColor="primary">Reactive programming is programming with asynchronous data streams.</ListItem></Appear>
             <Appear>
-                <ListItem textColor="primary">
-                  Streams are event pipelines or your typical events, which you can observe and trigger side effects.
-                </ListItem>
+              <ListItem style={subListItem} textColor="primary" textSize="1.2em">
+                  Reactive programming is programming with asynchronous data streams.
+              </ListItem>
             </Appear>
-            <Appear><ListItem textColor="primary">Item 1</ListItem></Appear>
-            <Appear><ListItem textColor="primary">Item 1</ListItem></Appear>
-            <Appear><ListItem textColor="primary">Item 1</ListItem></Appear>
-            <Appear><ListItem textColor="primary">Item 1</ListItem></Appear>
+            <Appear>
+              <ListItem style={subListItem} textColor="primary" textSize="1.2em">
+                  Streams are event pipelines or your typical events, which you can observe and trigger side effects.
+              </ListItem>
+            </Appear>
+            <Appear>
+              <ListItem style={subListItem} textColor="primary" textSize="1.2em">
+                  Streams are event pipelines or your typical events, which you can observe and trigger side effects.
+              </ListItem>
+            </Appear>
+            <Appear>
+              <ListItem style={subListItem} textColor="primary" textSize="1.2em">
+                Streams are event pipelines or your typical events, which you can observe and trigger side effects.
+              </ListItem>
+            </Appear>
           </List>
         </Slide>
 
