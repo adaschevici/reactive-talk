@@ -79,7 +79,7 @@ export default class Presentation extends React.Component {
           <Image src={images.anchorman.replace("/", "")} height="500px" width="800px" />
         </Slide>
 
-        <Slide transition={["slide"]} bgColor="tertiary">
+        <Slide transition={["slide"]} bgColor="secondary">
           <Heading size={4} textColor="primary" caps>Huh?</Heading>
           <List>
             <Appear>
@@ -105,7 +105,7 @@ export default class Presentation extends React.Component {
           </List>
         </Slide>
 
-        <Slide transition={["slide"]} bgColor="secondary">
+        <Slide transition={["slide"]} bgColor="tertiary">
           <Heading size={4} textColor="primary" caps>Why?</Heading>
           <List>
             <Appear>
@@ -134,7 +134,7 @@ export default class Presentation extends React.Component {
           </Appear>
         </Slide>
 
-        <Slide transition={["slide"]} bgColor="tertiary">
+        <Slide transition={["slide"]} bgColor="secondary">
           <Heading size={4} textColor="primary" caps>How?</Heading>
           <List>
             <Appear>
@@ -160,7 +160,7 @@ export default class Presentation extends React.Component {
           </List>
         </Slide>
 
-        <Slide transition={["slide"]} bgColor="secondary">
+        <Slide transition={["slide"]} bgColor="tertiary">
           <Heading size={4} textColor="primary" caps>When?</Heading>
           <List>
             <Appear>
