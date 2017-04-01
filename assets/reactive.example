@@ -1,0 +1,6 @@
+var fooButton = document.querySelector('.foo');
+var fooClickStream = Rx.Observable.fromEvent(fooButton, 'click');
+
+fooClickStream.subscribe(function() {
+    console.log("Clicked button with class foo");
+});

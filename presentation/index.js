@@ -229,6 +229,23 @@ export default class Presentation extends React.Component {
         </Slide>
 
 
+        <Slide transition={["slide"]} bgColor="secondary">
+          <Heading size={4} textColor="primary" caps>Classical event handling</Heading>
+          <CodePane
+            lang="javascript"
+            source={require("raw-loader!../assets/classical.example")}
+            textSize="0.7em"
+            margin="20px auto"
+          />
+          <Heading size={4} textColor="primary" caps>Reactive event handling</Heading>
+          <CodePane
+            lang="javascript"
+            source={require("raw-loader!../assets/reactive.example")}
+            textSize="0.7em"
+            margin="20px auto"
+          />
+        </Slide>
+
         <Slide transition={["fade"]} bgImage={images.sunset.replace("/", "")} bgDarken="0.75" textColor="primary">
           <BlockQuote>
           <Quote>
@@ -248,7 +265,6 @@ export default class Presentation extends React.Component {
               <Image src={images.octocat.replace("/", "")} width="100" height="100" />
               <Link textColor="tertiary" href="http://github.com/adaschevici/reactive-talk" textSize="0.35em">http://github.com/adaschevici/reactive-talk</Link>
             </Quote>
-
           </BlockQuote>
         </Slide>
       </Deck>
