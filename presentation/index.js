@@ -231,13 +231,16 @@ export default class Presentation extends React.Component {
 
         <Slide transition={["slide"]} bgColor="secondary">
           <Heading size={4} textColor="primary" caps>Classical event handling</Heading>
+          \n
           <CodePane
             lang="javascript"
             source={require("raw-loader!../assets/classical.example")}
             textSize="0.7em"
             margin="20px auto"
           />
+          \n
           <Heading size={4} textColor="primary" caps>Reactive event handling</Heading>
+          \n
           <CodePane
             lang="javascript"
             source={require("raw-loader!../assets/reactive.example")}
@@ -246,7 +249,7 @@ export default class Presentation extends React.Component {
           />
         </Slide>
 
-        <Slide transition={["fade"]} bgImage={images.sunset.replace("/", "")} bgDarken="0.75" textColor="primary">
+        <Slide transition={["fade"]} bgImage={images.sunset.replace("/", "")} bgDarken="0.50" textColor="primary">
           <BlockQuote>
           <Quote>
             <Image src={images.reactiveDog.replace("/", "")} width="500" height="500" />
