@@ -31,7 +31,8 @@ require("spectacle/lib/themes/default/index.css");
 const images = {
   anchorman: require("../assets/anchorman.jpg"),
   reactiveDog: require("../assets/reactive_dog.jpg"),
-  starlordConfused: require("../assets/starlord_confused.jpg")
+  starlordConfused: require("../assets/starlord_confused.jpg"),
+  nightmare: require("../assets/nightmare.jpg")
 };
 
 preloader(images);
@@ -109,25 +110,26 @@ export default class Presentation extends React.Component {
           <List>
             <Appear>
               <ListItem textColor="primary" textSize="1em">
-                You have a webapp with a multitude of UI events
+                Managing user events flow is hard
               </ListItem>
             </Appear>
             <Appear>
               <ListItem textColor="primary" textSize="1em">
-                Events in apps trigger changes to the backend
+                Managing async events flow is harder
               </ListItem>
             </Appear>
             <Appear>
               <ListItem textColor="primary" textSize="1em">
-                Data changes need to be broadcasted seamlessly and at scale to all users
+                Managing both is a NIGHTMARE
               </ListItem>
             </Appear>
             <Appear>
               <ListItem textColor="primary" textSize="1em">
-                The event flow is very complex and could benefit from an abstraction
+                The bad news is you have to handle both
               </ListItem>
             </Appear>
           </List>
+          <Image src={images.nightmare.replace("/", "")} width="400" height="300" />
         </Slide>
 
         <Slide transition={["slide"]} bgColor="tertiary">
