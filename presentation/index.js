@@ -60,7 +60,7 @@ export default class Presentation extends React.Component {
             </Heading>
           </Appear>
           <Appear>
-            <Image src={images.starlordConfused.replace("/", "")} height="300px" width="300px" display="block" />
+            <Image src={images.starlordConfused.replace("/", "")} height="500px" width="500px" display="block" />
           </Appear>
         </Slide>
 
@@ -170,7 +170,7 @@ export default class Presentation extends React.Component {
               </ListItem>
             </Appear>
             <Appear>
-              <ListItem textColor="primary" textSize="1em">
+              <ListItem textColor="primary">
                 As a rule of thumb whenever the system has asynchronous service calls and side effects based on these service calls then there can be gains using the reactive approach
               </ListItem>
             </Appear>
