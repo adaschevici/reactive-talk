@@ -109,12 +109,12 @@ export default class Presentation extends React.Component {
           <List>
             <Appear>
               <ListItem textColor="primary" textSize="1em">
-                The benefits are obvious in modern webapps and mobile apps that are highly interactive with a multitude of UI events related to data events
+                You have a webapp with a multitude of UI events
               </ListItem>
             </Appear>
             <Appear>
               <ListItem textColor="primary" textSize="1em">
-                Apps are more real time, triggering saves and modifications to the backend in response to these events
+                Events in apps trigger changes to the backend
               </ListItem>
             </Appear>
             <Appear>
@@ -124,7 +124,7 @@ export default class Presentation extends React.Component {
             </Appear>
             <Appear>
               <ListItem textColor="primary" textSize="1em">
-                The complexity of the event flow raises a requirement for a layer of abstraction on top of event pipelines and Reactive Programming is an approach to this abstraction.
+                The event flow is very complex and could benefit from an abstraction
               </ListItem>
             </Appear>
           </List>
