@@ -91,7 +91,7 @@ export default class Presentation extends React.Component {
             </Appear>
             <Appear>
               <ListItem textColor="primary" textSize="1.2em">
-                Streams are event pipelines or your typical events, which you can observe and perform actions on.
+                Streams are object pipelines or your typical events, which you can observe and react to.
               </ListItem>
             </Appear>
             <Appear>
@@ -101,7 +101,7 @@ export default class Presentation extends React.Component {
             </Appear>
             <Appear>
               <ListItem textColor="primary" textSize="1.2em">
-                Observables can be subscribed to by observers which "react" to the observed stream data.
+                Observers are methods that implement actions based on the observed stream.
               </ListItem>
             </Appear>
           </List>
