@@ -175,7 +175,7 @@ export default class Presentation extends React.Component {
             </Appear>
             <Appear>
               <ListItem textColor="primary">
-                As a rule of thumb whenever the system has asynchronous service calls and side effects based on these service calls then there can be gains using the reactive approach
+                As a rule of thumb whenever the system has asynchronous API calls and side effects based on these calls then there can be gains using the reactive approach
               </ListItem>
             </Appear>
           </List>
