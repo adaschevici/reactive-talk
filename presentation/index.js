@@ -115,7 +115,7 @@ export default class Presentation extends React.Component {
             </Appear>
             <Appear>
               <ListItem textColor="primary" textSize="1em">
-                Managing async events flow is harder
+                Managing broadcast events is harder
               </ListItem>
             </Appear>
             <Appear>
@@ -129,7 +129,9 @@ export default class Presentation extends React.Component {
               </ListItem>
             </Appear>
           </List>
-          <Image src={images.nightmare.replace("/", "")} width="400" height="300" />
+          <Appear>
+            <Image src={images.nightmare.replace("/", "")} width="400" height="300" />
+          </Appear>
         </Slide>
 
         <Slide transition={["slide"]} bgColor="tertiary">
