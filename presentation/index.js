@@ -170,7 +170,7 @@ export default class Presentation extends React.Component {
             </Appear>
             <Appear>
               <ListItem textColor="primary">
-                In server side apps that need to have side effects based on async service calls.
+                You have a server side apps that need to have side effects based on async service calls.
               </ListItem>
             </Appear>
             <Appear>
@@ -213,7 +213,7 @@ export default class Presentation extends React.Component {
           <CodePane
             lang="javascript"
             source={require("raw-loader!../assets/deck.example")}
-            textSize="0.8em"
+            textSize="0.7em"
             margin="20px auto"
           />
         </Slide>
