@@ -165,12 +165,12 @@ export default class Presentation extends React.Component {
           <List>
             <Appear>
               <ListItem textColor="primary">
-                In UI applications that need rich event handling on components.
+                You have an UI with rich events
               </ListItem>
             </Appear>
             <Appear>
               <ListItem textColor="primary">
-                In server side apps that need to have side effects based on asynch service calls.
+                In server side apps that need to have side effects based on async service calls.
               </ListItem>
             </Appear>
             <Appear>
@@ -181,12 +181,38 @@ export default class Presentation extends React.Component {
           </List>
         </Slide>
 
-        <Slide transition={["fade"]} bgColor="secondary" textColor="primary">
+        <Slide transition={["slide"]} bgColor="secondary">
+          <Heading size={4} textColor="primary" caps>When (Examples)?</Heading>
+          <List>
+            <Appear>
+              <ListItem textColor="primary">
+                A grid-like component with functionality similar to MS Excel
+              </ListItem>
+            </Appear>
+            <Appear>
+              <ListItem textColor="primary">
+                An interactive shared dashboard
+              </ListItem>
+            </Appear>
+            <Appear>
+              <ListItem textColor="primary">
+                A web text editor
+              </ListItem>
+            </Appear>
+            <Appear>
+              <ListItem textColor="primary">
+                A highly concurrent message queue
+              </ListItem>
+            </Appear>
+          </List>
+        </Slide>
+
+        <Slide transition={["fade"]} bgColor="tertiary" textColor="primary">
           <BlockQuote>
           <Quote>
             <Image src={images.reactiveDog.replace("/", "")} width="500" height="500" />
           </Quote>
-          <Cite>Every Reactive Programmer Ever</Cite>
+          <Cite textColor="primary">Every Reactive Programmer Ever</Cite>
           </BlockQuote>
         </Slide>
       </Deck>
